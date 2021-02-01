@@ -1,0 +1,53 @@
+.angled {
+    position: relative;
+    display: block;
+    padding: 1px 5em 1px 5px;
+    overflow: hidden;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .angled:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5em;
+    height: 30px;
+    background: rgb(184, 17, 17);
+    -webkit-transform-origin: 0 100% ;
+    -ms-transform-origin: 0 100% ;
+    transform-origin: 0 100%;
+    -webkit-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+    transform: skew(10deg);
+    z-index: -1;
+  }
+
+  .imageOverlay {
+    position: absolute;
+    display: block;
+    padding: 1px 5em 1px 5px;
+    overflow: hidden;
+    color: #fff;
+    font-weight: bold;
+    z-index: 2;
+    top: -10px;
+  }
+  
+  .imageOverlay:after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 5em;
+    height: 30px;
+    background:  rgb(184, 17, 17);
+    -webkit-transform-origin: 0 100% ;
+    -ms-transform-origin: 0 100% ;
+    transform-origin: 0 100%;
+    -webkit-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+    transform: skew(10deg);
+    z-index: -1;
+  }
